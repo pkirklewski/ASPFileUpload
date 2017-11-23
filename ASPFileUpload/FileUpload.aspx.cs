@@ -14,7 +14,7 @@ namespace ASPFileUpload
             Response.Write("Page Load OK");
         }
 
-        private void Submit1_ServerClick(object sender, System.EventArgs e)
+        protected void Submit1_ServerClick(object sender, System.EventArgs e)
         {
             Response.Write("click");
             

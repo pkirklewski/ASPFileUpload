@@ -7,12 +7,13 @@
     <title>FileUpload</title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" enctype="multipart/form-data" runat="server">
 <%--    <p><input type="file" id="File1"/></p>
         <p><input id="Submit1" type="submit" value="submit" /></p>--%>
         
         	<p><input type="file" id="File1" name="File1" runat="server" /></p>
-        	<p><input type="submit" id="Submit1" value="Upload" runat="server"/></p>
+        	
+        <asp:Button ID="submitbtn" Text="Submit" OnClick="Submit1_ServerClick" runat="server" />
        
     </form>       
 </body>
